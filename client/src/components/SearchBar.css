@@ -1,0 +1,40 @@
+
+  
+  .search {
+    width: 100%;
+    position: top;
+    display: block;
+    color:aliceblue;
+  }
+  
+  .searchTerm {
+    width: 60%;
+    border: 3px solid #2f8388;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fcfbfb;
+  }
+  
+  .searchTerm:focus{
+    color: black;
+  }
+  
+  .select {
+    margin: 20 50px;
+    position: relative; 
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 25px;
+    justify-content: space-between;
+    border:none;
+    border-radius: 25px;
+    background: #2f8388;
+  
+  }
+  .select:hover{
+    background-color: gray;
+    -webkit-transform:scale(1.05);transform:scale(1.05);
+    cursor: pointer;
+  }
