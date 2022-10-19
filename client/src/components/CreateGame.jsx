@@ -186,8 +186,8 @@ export function CreateGame() {
                   <option className="searchTerm" hidden={true}>
                     Plataformas
                   </option>
-                  {plataformas.map((e) => (
-                    <option value={e}>{e}</option>
+                  {plataformas.map((e, j) => (
+                    <option key={j} value={e}>{e}</option>
                   ))}
                 </select>
                 {errors.platforms && <p>{errors.platforms}</p>}
@@ -195,8 +195,8 @@ export function CreateGame() {
 
               <div>
                 <div>
-                  {input.platforms.map((p) => (
-                    <div className="searchTerm">
+                  {input.platforms.map((p, y) => (
+                    <div key={y} className="searchTerm">
                       {p}
                       <button type="button" onClick={() => handleDelete(p)}>
                         x
@@ -213,8 +213,8 @@ export function CreateGame() {
                   <option className="searchTerm" hidden={true}>
                     Géneros
                   </option>
-                  {genres.map((e) => (
-                    <option className="searchTerm" value={e.name}>
+                  {genres.map((e, p) => (
+                    <option className="searchTerm" key={p} value={e.name}>
                       {e.name}
                     </option>
                   ))}
@@ -224,8 +224,8 @@ export function CreateGame() {
             </div>
 
             <div>
-              {input.genres.map((g) => (
-                <div className="searchTerm">
+              {input.genres.map((g, a) => (
+                <div key={a} className="searchTerm">
                   {g}
                   <button type="button" onClick={() => handleDeleteG(g)}>
                     x

@@ -141,7 +141,6 @@ export const deleteVideogame = (id) => {
           await axios.delete(`http://localhost:3001/videogames/${id}`)
           return dispatch({
               type: 'DELETE_VIDEOGAME',
-
           })
       }catch(err){
           console.log(err)

@@ -20,8 +20,8 @@ export function FilterByGenre(){
         <div > 
              <select  className="select" onChange = {(e) => handleChange(e)} >
              <option  hidden={true}>Géneros</option>
-                        {genres.map((e) => (
-                            <option key ={e.id} value={e.name}>{e.name}</option>
+                        {genres.map((e,h) => (
+                            <option key ={h} value={e.name}>{e.name}</option>
                         ))}
                     </select>
                    
